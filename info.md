@@ -9,9 +9,9 @@ Este proyecto crea un catálogo de productos utilizando JavaScript y muestra los
 - [Ejecución](#ejecución)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Ejemplo](#ejemplo)
-- [index](../dw3-basic/src/public/index.html)
-- [js](../dw3-basic/src/js/clase1.js)
-- [css](../dw3-basic/src/css/styles.css)
+- [index](../src/public/index.html)
+- [js](../src/js/clase1.js)
+- [css](../src/css/styles.css)
 
  El codigo esta modificado con el fin de estudiarlo y que no sea C&P
 
