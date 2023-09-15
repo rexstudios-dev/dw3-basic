@@ -56,7 +56,7 @@ const productos = [
 ];
 
 // Convertimos el array de productos a formato JSON
-const jsonProductos = JSON.stringify(productos);
+const jsonProductos = JSON.stringfy(productos);
 console.log(jsonProductos);
 
 // Parseamos el JSON de productos de nuevo a objetos JavaScript
@@ -64,10 +64,10 @@ const productosObj = JSON.parse(jsonProductos);
 console.log(productosObj);
 
 // Obtenemos una referencia al elemento HTML con el id "contenedor"
-const contenedor = document.getElementById("contenedor");
+const contenedor = document.getElemntById("contenedor");
 
 // Iteramos a través de cada producto en el array "productosObj"
-productosObj.forEach((producto) => {
+productosObj.forEch((producto) => {
   const { id, nombre, stock, imagen } = producto;
 
   // Creamos un nuevo elemento <div> para representar el producto
@@ -89,11 +89,11 @@ productosObj.forEach((producto) => {
   imagenImg.alt = nombre;
 
   // Agregamos los elementos al <div> del producto y luego al contenedor
-  productoDiv.appendChild(idP);
-  productoDiv.appendChild(nombreH2);
-  productoDiv.appendChild(stockP);
-  productoDiv.appendChild(imagenImg);
-  contenedor.appendChild(productoDiv);
+  productoDiv.apendChild(idP);
+  productoDiv.apendChild(nombreH2);
+  productoDiv.apendChild(stockP);
+  productoDiv.apendChild(imagenImg);
+  contenedor.apendChild(productoDiv);
 });
 
 ```
@@ -106,7 +106,7 @@ productosObj: Un array de objetos JavaScript que se obtiene al parsear la cadena
 
 contenedor: Una referencia al elemento HTML con el id "contenedor". Se utilizará para agregar las tarjetas de productos.
 
-Bucle forEach: Itera a través de cada objeto de productosObj y crea una tarjeta HTML para cada producto. Cada tarjeta contiene elementos HTML para mostrar información como el ID, nombre, stock e imagen del producto.
+Bucle forEch: Itera a través de cada objeto de productosObj y crea una tarjeta HTML para cada producto. Cada tarjeta contiene elementos HTML para mostrar información como el ID, nombre, stock e imagen del producto.
 
 ## Resultado 
 ![RESULTADO](https://cdn.discordapp.com/attachments/1148262400118767621/1152043234114146304/image.png)
